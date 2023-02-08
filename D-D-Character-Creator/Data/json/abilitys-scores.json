@@ -1,0 +1,27 @@
+{
+  "AbilityScores": {
+    "PointBuyCost": {
+      "int": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ]
+    },
+    "Arrays": {
+      "string": [
+        "15, 14, 13, 12, 10, 8",
+        "15, 15, 15, 8, 8, 8",
+        "13, 13, 13, 12, 12, 12"
+      ]
+    },
+    "PointBuyPoints": 27,
+    "PointBuyMinScore": 8,
+    "PointBuyMaxScore": 15,
+    "DefaultMax": 20
+  }
+}
