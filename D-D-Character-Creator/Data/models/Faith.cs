@@ -2,15 +2,11 @@
 
 namespace D_D_Character_Creator.Data.models
 {
-    public class SubClass
+    public class Faith
     {
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-
-        public ICollection<SubClassLevel> SubClassesLevels { get; set; }
-        public ICollection<Spell> Spells { get; set; }
-
     }
 }

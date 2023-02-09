@@ -2,7 +2,7 @@
 
 namespace D_D_Character_Creator.Data.models
 {
-    public class SubClassLevels
+    public class SubClassLevel
     {
         [Key]
         public int Id { get; set; }

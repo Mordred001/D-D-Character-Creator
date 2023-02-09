@@ -2,16 +2,17 @@
 
 namespace D_D_Character_Creator.Data.models
 {
-    public class Backgrounds
+    public class Background
     {
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public ICollection<PersonalityTraits> PersonalityTraits { get; set; }
-        public ICollection<Ideals> Ideals { get; set; }
-        public ICollection<Bonds> Bonds { get; set; }
+        public ICollection<PersonalityTrait> PersonalityTraits { get; set; }
+        public ICollection<Ideal> Ideals { get; set; }
+        public ICollection<Bond> Bonds { get; set; }
+        public ICollection<Flaw> Flaws { get; set; }
 
         public ICollection<SkillProficiency>? SkillProficiency { get;set; }
         public ICollection<ToolProficiency>? ToolProficiency { get;set; }

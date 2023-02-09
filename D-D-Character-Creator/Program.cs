@@ -1,6 +1,17 @@
-var builder = WebApplication.CreateBuilder(args);
+using D_D_Character_Creator.Data;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System.Data.Common;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+var connectionString = builder.Configuration["ConnectionStrings:DnDDataBase"];
+if (connectionString == null)
+{
+    throw new Exception("Connection String is null");
+}
+
+builder.Services.AddDbContext<DndDbContext>(opts => opts.UseSqlServer(connectionString));
 
 builder.Services.AddControllersWithViews();
 
