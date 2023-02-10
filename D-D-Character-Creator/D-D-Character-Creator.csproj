@@ -23,6 +23,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,8 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\json\" />
-    <Folder Include="Data\maps\" />
+    <Folder Include="Data\seeders\xml\" />
     <Folder Include="Migrations\" />
   </ItemGroup>
 

@@ -1,5 +1,10 @@
 ﻿using D_D_Character_Creator.Data.account;
-using D_D_Character_Creator.Data.models;
+using D_D_Character_Creator.Data.models.backgrounds;
+using D_D_Character_Creator.Data.models.character;
+using D_D_Character_Creator.Data.models.classes;
+using D_D_Character_Creator.Data.models.common;
+using D_D_Character_Creator.Data.models.equipment;
+using D_D_Character_Creator.Data.models.races;
 using D_D_Character_Creator.Data.seeders;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +19,7 @@ namespace D_D_Character_Creator.Data
         {
             base.OnModelCreating(builder);
             builder.ApplyConfiguration(new SpellData());
+
         }
         public DbSet<AbilityScore> AbilityScores { get; set; }
         public DbSet<Alignment> Alignments { get; set; }
