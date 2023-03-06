@@ -28,13 +28,32 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="Data\DTOs\**" />
+    <Compile Remove="Data\enums\**" />
+    <Compile Remove="Data\models\**" />
+    <Compile Remove="Data\seeders\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="Data\DTOs\**" />
+    <Content Remove="Data\enums\**" />
+    <Content Remove="Data\models\**" />
+    <Content Remove="Data\seeders\**" />
+    <EmbeddedResource Remove="Data\DTOs\**" />
+    <EmbeddedResource Remove="Data\enums\**" />
+    <EmbeddedResource Remove="Data\models\**" />
+    <EmbeddedResource Remove="Data\seeders\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="Data\DTOs\**" />
+    <None Remove="Data\enums\**" />
+    <None Remove="Data\models\**" />
+    <None Remove="Data\seeders\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\seeders\xml\" />
+    <Compile Remove="Data\DndDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Migrations\" />
   </ItemGroup>
 
